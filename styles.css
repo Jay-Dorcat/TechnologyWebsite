@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+:root {
+    font-family:'Quicksand';
+    color: white;
+}
+
+.panel {
+    padding: 20px;
+    background-color: rgba(58, 58, 58, 0.43);
+    backdrop-filter: blur(6px);
+}
+
+.rootBody {
+    background-image: url("https://img.itch.zone/aW1nLzI2NTE3NDU0LmdpZg==/original/%2FmbvG0.gif");
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #c3d9ff;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.navbar li {
+    flex-grow: 1;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+ul.navbar li a {
+    flex-grow: 1;
+    text-align: center;
+    align-content: center;
+    min-height: 50px;
+    background-color: rgba(30, 30, 30, 0.43);
+    transition: background-color .5s, color .5s;
+}
+
+ul.navbar li a.active {
+    background-color: rgba(0, 0, 0, 0.43);
+}
+
+ul.navbar li a.active:hover {
+    background-color: rgba(220, 220, 220, 0.43);
+    color: black;
+}
