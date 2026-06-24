@@ -5,6 +5,13 @@
 :root {
     font-family:'Quicksand';
     color: white;
+    font-size: larger;
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-decoration: underline;
 }
 
 div.logo {
@@ -22,7 +29,7 @@ div.logo div h1 {
     font-family:'Audiowide';
     font-weight: 100;
     font-size: 45px;
-    letter-spacing: 5px;
+    letter-spacing: 12px;
     margin: 0;
 }
 
@@ -60,6 +67,10 @@ div.hidden {
     background-color: #090b13;
 }
 
+.headerBuffer {
+   height: 240px;
+}
+
 .pageContent {
     margin: 50px
 }
@@ -87,24 +98,30 @@ ul.navbar li {
 
 a {
     color: white;
-    text-decoration: none;
-    font-size: 20px;
+    text-underline-offset: 1px;
+    transition: text-underline-offset .5s;
 }
 
+a:hover {
+    text-underline-offset: 4px;
+}
 
 ul.navbar li a {
     flex-grow: 1;
     text-align: center;
     align-content: center;
+    text-decoration: none;
+    font-size: 20px;
     min-height: 50px;
     background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color .5s, font-size .5s;
+    transition: background-color .5s, font-size .5s, letter-spacing .5s;
     border-radius: 20px;
 }
 
 ul.navbar li a:hover {
     background-color: rgba(0, 0, 0, 0.6);
-    font-size: 25px;
+    /*font-size: 25px;*/
+    letter-spacing: 5px;
 }
 
 ul.navbar li a.navActive {
@@ -113,4 +130,23 @@ ul.navbar li a.navActive {
 
 ul.navbar li a.navActive:hover {
     background-color: rgba(0, 0, 0, 0);
+}
+
+/*Desktop Only*/
+@media only screen and (min-width: 1152px) {
+    div.header {
+        display: flex;
+        align-items: flex-end;
+    }
+    ul.navbar {
+        flex-grow: 1;
+    }
+    .headerBuffer {
+        height: 160px;
+    }
+}
+
+/*Mobile Only*/
+@media only screen and (max-width: 600px) {
+    
 }
