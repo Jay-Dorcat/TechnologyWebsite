@@ -1,27 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+@import url(https://fonts.googleapis.com/css2?family=Quicksand);
+@import url(https://fonts.googleapis.com/css2?family=Audiowide);
+@import url(https://fonts.googleapis.com/css2?family=Elms+Sans);
 
 :root {
     font-family:'Quicksand';
     color: white;
 }
 
-.panel {
+div.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+div.logo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.logo div h1 {
+    font-family:'Audiowide';
+    font-weight: 100;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+div.logo div h3 {
+    font-family:'Elms Sans';
+    font-weight: 600;
+    letter-spacing: 13px;
+    margin: 0; 
+    /*color: #7b31c7;*/
+    background-image: linear-gradient(#7b31c7, #50039f);
+    color: transparent;
+    background-clip: text;
+}
+
+div.header {
     padding: 20px;
-    background-color: rgba(58, 58, 58, 0.43);
-    backdrop-filter: blur(6px);
+    border-radius: 0 0 20px 20px;
+    /*background-image: linear-gradient(-40deg, #000000, #1f1335);*/
+    background-image: radial-gradient(at 20% 20%, #1e1f26, #090b13);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: top .5s;
+}
+
+div.hidden {
+    top: -178px;
 }
 
 .rootBody {
-    background-image: url("https://img.itch.zone/aW1nLzI2NTE3NDU0LmdpZg==/original/%2FmbvG0.gif");
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-color: #c3d9ff;
-    background-blend-mode: multiply;
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    background-color: #090b13;
+}
+
+.pageContent {
+    margin: 50px
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -330px;
+    visibility: hidden;
 }
 
 ul.navbar {
@@ -41,6 +88,7 @@ ul.navbar li {
 a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 
@@ -49,15 +97,20 @@ ul.navbar li a {
     text-align: center;
     align-content: center;
     min-height: 50px;
-    background-color: rgba(30, 30, 30, 0.43);
-    transition: background-color .5s, color .5s;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color .5s, font-size .5s;
+    border-radius: 20px;
 }
 
-ul.navbar li a.active {
-    background-color: rgba(0, 0, 0, 0.43);
+ul.navbar li a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 25px;
 }
 
-ul.navbar li a.active:hover {
-    background-color: rgba(220, 220, 220, 0.43);
-    color: black;
+ul.navbar li a.navActive {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ul.navbar li a.navActive:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
