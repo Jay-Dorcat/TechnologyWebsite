@@ -12,6 +12,7 @@ h2 {
     font-size: 30px;
     letter-spacing: 3px;
     text-decoration: underline;
+    margin-top: 200px;
 }
 
 div.logo {
@@ -47,11 +48,17 @@ div.logo div {
 
 .logoSubtitle.webdes{
     background-image: linear-gradient(#c74b31, #9f1e03);
-    letter-spacing: 24px;
+    letter-spacing: 16.7px;
 }
+
 .logoSubtitle.studio{
     background-image: linear-gradient(#7b31c7, #50039f);
     letter-spacing: 12px;
+}
+
+.logoSubtitle.pfolio{
+    background-image: linear-gradient(#738185, #0f0f18);
+    letter-spacing: 10px;
 }
 
 div.header {
