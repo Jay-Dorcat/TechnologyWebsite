@@ -36,6 +36,7 @@ div.logo div h1 {
 div.logo div h3 {
     font-family:'Elms Sans';
     font-weight: 600;
+    font-size: larger;
     letter-spacing: 13px;
     margin: 0; 
     /*color: #7b31c7;*/
@@ -57,7 +58,7 @@ div.header {
 }
 
 div.hidden {
-    top: -178px;
+    top: -140px;
 }
 
 .rootBody {
@@ -72,7 +73,8 @@ div.hidden {
 }
 
 .pageContent {
-    margin: 50px
+    margin: 50px;
+    justify-self: center;
 }
 
 a.anchor {
@@ -132,6 +134,10 @@ ul.navbar li a.navActive:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
+td {
+  padding-left: 30px;  
+}
+
 /*Desktop Only*/
 @media only screen and (min-width: 1152px) {
     div.header {
@@ -144,9 +150,15 @@ ul.navbar li a.navActive:hover {
     .headerBuffer {
         height: 160px;
     }
+    div.hidden {
+        top: 0;
+    }
 }
 
 /*Mobile Only*/
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 500px) {
+    div.logo {
+        transform-origin: left;
+        scale: .8;
+    }
 }
