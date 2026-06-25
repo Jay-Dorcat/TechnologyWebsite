@@ -25,7 +25,7 @@ div.logo div {
     justify-content: center;
 }
 
-div.logo div h1 {
+.logoTitle {
     font-family:'Audiowide';
     font-weight: 100;
     font-size: 45px;
@@ -33,28 +33,42 @@ div.logo div h1 {
     margin: 0;
 }
 
-div.logo div h3 {
+.logoSubtitle {
     font-family:'Elms Sans';
     font-weight: 600;
     font-size: larger;
     letter-spacing: 13px;
     margin: 0; 
     /*color: #7b31c7;*/
-    background-image: linear-gradient(#7b31c7, #50039f);
+    background-image: linear-gradient(#31adc7, #033c9f);
     color: transparent;
     background-clip: text;
+}
+
+.logoSubtitle.webdes{
+    background-image: linear-gradient(#c74b31, #9f1e03);
+    letter-spacing: 24px;
+}
+.logoSubtitle.studio{
+    background-image: linear-gradient(#7b31c7, #50039f);
+    letter-spacing: 12px;
 }
 
 div.header {
     padding: 20px;
     border-radius: 0 0 20px 20px;
-    /*background-image: linear-gradient(-40deg, #000000, #1f1335);*/
-    background-image: radial-gradient(at 20% 20%, #1e1f26, #090b13);
+    background-image: radial-gradient(circle at 0 -200%, #1e1f26, #090b13);
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     transition: top .5s;
+}
+
+div.footer{
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    background-image: radial-gradient(circle at 0 300%, #1e1f26, #090b13);
 }
 
 div.hidden {
